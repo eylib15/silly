@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Animaciones personalizadas */
+
+/* Flotación suave (sube y baja) */
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Flotación más lenta y sutil */
+@keyframes flotarSuave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* Flotación con efecto de rebote */
+@keyframes flotarRebote {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-12px);
+    }
+    70% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ========== CLASES UTILITARIAS ========== */
+/* Ahora puedes usar .animate-flotar como cualquier clase de Tailwind */
+
+@layer utilities {
+    .animate-flotar {
+        animation: flotar 3s ease-in-out infinite;
+    }
+    
+    .animate-flotar-suave {
+        animation: flotarSuave 4s ease-in-out infinite;
+    }
+    
+    .animate-flotar-rebote {
+        animation: flotarRebote 3.5s ease-in-out infinite;
+    }
+    
+    /* Variación rápida */
+    .animate-flotar-rapido {
+        animation: flotar 1.5s ease-in-out infinite;
+    }
+    
+    /* Variación lenta */
+    .animate-flotar-lento {
+        animation: flotar 5s ease-in-out infinite;
+    }
+    
+    /* Para pausar al hacer hover */
+    .animate-flotar-pausa:hover {
+        animation-play-state: paused;
+    }
+}

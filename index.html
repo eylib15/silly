@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="public/assets/hateforever.png">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <title>silly ( ˶°ㅁ°) !!</title>
+</head>
+
+<body class="bg-pink-100 font-[Quicksand]">
+  <header
+    class="w-full bg-pink-50 flex flex-row items-center justify-between py-4 px-8 top-0 left-0 right-0 shadow-sm shadow-pink-200">
+    <div class="flex flex-row gap-5 items-center">
+      <img src="public/assets/hateforever.png"
+        alt="sticker del hate forever de pchan, un personaje de needy girl overdose" class="w-14">
+
+      <h1 class="text-2xl font-bold text-pink-800">silly ( ˶°ㅁ°) !!</h1>
+    </div>
+    <!--boton-->
+    <div>
+      <button id="abrirMenu"
+        class="bg-pink-100 hover:bg-pink-200 p-3 rounded-full transition-colors duration-300 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6 font-bold text-pink-800">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+  </header>
+  <!--menu lateral derecho-->
+  <div id="menuLateral"
+    class="fixed top-0 right-0 h-full w-full sm:w-80 md:w-96 bg-pink-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <div class="p-6 flex flex-col h-full overflow-y-auto">
+      <!--parte de arriba del menú-->
+      <div class="flex justify-between items-center border-b border-pink-200 pb-4 mb-6">
+        <h2 class="text-xl text-pink-800 font-bold">Mis creaciones</h2>
+
+        <button id="cerrarMenu"
+          class="bg-pink-100 hover:bg-pink-200 p-3 rounded-full transition-colors duration-300 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 font-bold text-pink-800">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+
+        </button>
+      </div>
+      <!--contenido del menu-->
+      <nav>
+        <ul class="flex flex-col gap-3">
+          <li>
+            <a href=""
+              class="text-gray-600 hover:text-pink-600 font-semibold transition-colors duration-200">SimsArchive</a>
+          </li>
+
+          <li>
+            <a href="" class="text-gray-600 hover:text-pink-600 font-semibold transition-colors duration-200">Van
+              Gogh</a>
+          </li>
+        </ul>
+      </nav>
+      <!--decoracion abajo-->
+      <div class="mt-auto pt-8">
+        <hr class="my-4 border-pink-200">
+        <a href="https://www.youtube.com/watch?v=DL1Wy1Jwcvw&list=RDDL1Wy1Jwcvw&start_radio=1" target="_blank"
+          rel="noopener noreferrer">
+          <p class="text-gray-600 hover:text-pink-500 text-sm font-bold text-center transition-colors duration-200">
+            (╥﹏╥)</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--capita oscura detras del menu-->
+  <div id="overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 hidden transition-all duration-300"></div>
+  <!--contenido principal-->
+  <main>
+    <!--Seccion 1. presentacion-->
+    <section class="py-12 px-8 flex flex-col items-center gap-8 md:grid md:grid-cols-2">
+      <!--texto-->
+      <article class="flex flex-col items-center text-center gap-5 md:gap-10 md:col-span-1">
+        <h2 class="text-4xl font-bold text-pink-800">silly ( ˶°ㅁ°) !!</h2>
+        <p class="text-gray-600 font-semibold pb-2">aquí guardo las paginas que hago para practicar. son mías asi que
+          espero que te gusten :)</p>
+        <span class="text-2xl font-bold text-pink-800 animate-flotar">(´｡• ᵕ •｡`)</span>
+      </article>
+      <!-- Imagen flotante -->
+      <article class="md:col-start-2 flex items-center justify-center">
+        <img src="public/assets/pezgato.gif" alt="un gif de un pez con cara de gato"
+          class="w-full md:max-w-100 rounded-xl shadow-lg shadow-pink-200 border-8 border-white hover:shadow-pink-300 hover:border-gray-300 transition-all duration-300 cursor-pointer animate-flotar">
+      </article>
+    </section>
+    <!--Sección 2. mis paginas-->
+    <section class="w-[80%] mx-auto flex flex-col items-center gap-8 py-12 md:grid md:grid-cols-2">
+      <!--pagina 1-->
+      <article
+        class="bg-white p-8 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-lg shadow-pink-200 h-130 hover:-translate-y-2 transition duration-300">
+        <img src="public/assets/plumbob.gif" alt="plumbob de los sims" class="w-20 h-auto md:max-w-100">
+        <h3 class="text-2xl font-bold text-pink-800">SimsArchive</h3>
+        <p class="text-gray-600 font-semibold">Una wiki sencilla sobre el mejor juego que pudo crear el humano</p>
+        <button
+          class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-5 rounded-full transition-colors duration-300 cursor-pointer">Ver
+          página</button>
+      </article>
+      <!--pagina 2-->
+      <article
+        class="bg-white p-8 flex flex-col gap-5 items-center justify-center rounded-2xl shadow-lg shadow-pink-200 h-130 hover:-translate-y-2 transition duration-300">
+        <img src="public/assets/vangogh.png" alt="dibujo de la luna, inspirado en a noche estrellada de van gogh"
+          class="w-40 h-auto md:max-w-100">
+        <h3 class="text-2xl font-bold text-pink-800">Van Gogh</h3>
+        <p class="text-gray-600 font-semibold">Un museo estrellado de un hombre que se cortó una oreja</p>
+        <button
+          class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-5 rounded-full transition-colors duration-300 cursor-pointer">Ver
+          página</button>
+      </article>
+    </section>
+    <!--Sección 3. yo-->
+    <section class="py-12">
+      <article
+        class="w-[80%] mx-auto bg-white rounded-4xl p-8 flex flex-col items-center gap-5 shadow-lg shadow-pink-200 hover:-translate-y-2 transition duration-300">
+        <img src="public/assets/yo.jpeg"
+          alt="dibujo del avatar de la autora, una persona con una bolsa en la cabeza, haciendo el signo de la paz con la mano"
+          class="size-50 rounded-full border-8 border-white shadow-lg shadow-gray-200">
+        <span class="bg-pink-300 p-4 rounded-4xl text-center text-pink-800 font-bold text-lg">programador — eylib</span>
+        <p class="text-gray-600 font-semibold text-center">hice esta pagina para tener un lugar guardar los proyectos
+          que voy realizando mientras aprendo código. todo está hecho con mucho cariño y gatos tonotos jejej</p>
+      </article>
+    </section>
+  </main>
+  <footer
+    class="w-full bg-pink-300 py-12">
+    <div class="w-[80%] mx-auto flex flex-col items-center gap-8 text-center md:flex-row md:justify-around md:px-8">
+      <div>
+        <img src="public/assets/perrito.gif" alt="gif de perro salchicha triste"
+          class="size-50 md:size-80 rounded-4xl shadow-lg shadow-pink-400 hover:scale-105 transition-transform duration-300">
+      </div>
+
+      <div class="flex flex-col gap-8">
+        <span class="text-xl font-semibold text-pink-800">hecho con ♡ y mucha paciencia juejuejue · (˶˃ ᵕ ˂˶)</span>
+        <hr class="text-pink-400 font-semibold">
+        <span class="font-semibold text-pink-700">© 2026 silly ( ˶°ㅁ°) !!. Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="src/menu.js"></script>
+</body>
+
+</html>
